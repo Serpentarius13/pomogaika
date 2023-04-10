@@ -26,7 +26,7 @@
 
         </div>
 
-        <BaseHeaderImages />
+        <BaseHeaderImages  />
 
         <div class="flex w-full flex-col gap-[1.6rem] items-center  md:hidden">
 

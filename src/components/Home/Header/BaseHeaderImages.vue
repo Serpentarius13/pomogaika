@@ -28,7 +28,9 @@ img {
     }
 
     &:nth-child(3) {
-        transform: translate(-15%, 70%)
+        transform: translate(-0%, 90%);
+
+        @apply w-[25rem] md:w-[40rem]
     }
 }
 </style>
