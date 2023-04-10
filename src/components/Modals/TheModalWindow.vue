@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, shallowRef, Ref } from "vue";
 import useModalStore from "../../store/useModalStore";
-import { IStoreProps } from "@/constants/types/modal";
+import { IStoreProps } from "@/features/constants/types/modal";
 import useEventListener from "@/features/composables/useEventListener";
 
 const store = useModalStore();

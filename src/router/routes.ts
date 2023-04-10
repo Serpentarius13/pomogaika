@@ -1,4 +1,4 @@
-import { RouteMeta } from 'vue-router';
+import type { RouteMeta } from 'vue-router';
 
 interface IRoute {
   path: string;

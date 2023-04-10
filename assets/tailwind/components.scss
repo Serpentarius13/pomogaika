@@ -1,0 +1,50 @@
+@layer components {
+
+    .center {
+  
+        @apply w-full mx-auto max-w-[120rem];
+    }
+
+    .title-big {
+        font-size: 2.8rem;
+        line-height: 6.5rem;
+        letter-spacing: -5%;
+        font-weight: 400;
+
+        @apply md:text-[3.8rem] lg:text-[5.4rem];
+    }
+
+    .subtitle-big {
+        font-size: 2rem;
+        line-height: 2rem;
+
+        @apply md:text-[2.4rem] md:leading-[2.4rem]
+    }
+
+    .title-small {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        letter-spacing: -5%;
+        @apply font-medium md:text-[3.6rem] leading-[4.3rem];
+
+
+    }
+
+    .subtitle-small {
+        font-size: 1.6rem;
+        line-height: 2.24rem;
+
+    }
+
+    .text-small {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        
+    }
+
+    .transitioned {
+        transition: 0.25s ease all;
+    }
+
+
+}

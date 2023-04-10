@@ -1,5 +1,5 @@
 <template>
-  <div>213</div>
+  <div class="text-3xl"> 213</div>
 </template>
 
 <script setup lang="ts"></script>

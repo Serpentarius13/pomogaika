@@ -1,10 +1,12 @@
 import { createApp } from 'vue';
-import '../static/main.scss';
+import '/assets/main.scss';
 
 import VueCookies from 'vue-cookies';
 
 import { createPinia } from 'pinia';
 import { PiniaLogger } from 'pinia-logger';
+
+import VueClickAway from 'vue3-click-away'
 
 import router from './router/router';
 import App from './App.vue';
@@ -19,6 +21,7 @@ pinia.use(
   }),
 );
 
+app.use(VueClickAway)
 app.use(pinia);
 app.use(router);
 app.use(VueCookies);
