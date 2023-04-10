@@ -5,13 +5,17 @@
         @apply w-full mx-auto max-w-[120rem];
     }
 
+    .section {
+        @apply px-[1.5rem] md:px-[3rem];
+    }
+
     .title-big {
         font-size: 2.8rem;
-        line-height: 6.5rem;
+        line-height: 3.3rem;
         letter-spacing: -5%;
         font-weight: 400;
 
-        @apply md:text-[3.8rem] lg:text-[5.4rem];
+        @apply md:text-[3.8rem] md:leading-[4.8rem] lg:leading-[6.5rem] lg:text-[5.4rem] ;
     }
 
     .subtitle-big {

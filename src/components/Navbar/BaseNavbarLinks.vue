@@ -1,11 +1,11 @@
 <template>
     <ul class="flex items-center  gap-[2rem]">
 
-        <li v-for="({ to, text }) in links " :key="text">
+        <li :class="textClassComputed" v-for="({ to, text }) in links " :key="text">
 
-            <RouterLink :class="textClassComputed" :to="to">
+            <router-link  :to="to">
                 {{ text }}
-            </RouterLink>
+            </router-link>
         </li>
     </ul>
 </template>
