@@ -4,7 +4,7 @@
 
         <img src="/icons/location.svg" alt="Иконка геолокации" />
         <BaseReusableSelect v-model="currentCity" :array-of-options="options" :is-absolute="true" max-height="30"
-            class="text-small min-w-[22rem] w-full text-orange-main" />
+            class="text-small min-w-[20rem] w-full text-orange-main" />
     </div>
 </template>
 

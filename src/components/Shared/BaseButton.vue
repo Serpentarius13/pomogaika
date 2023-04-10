@@ -1,5 +1,5 @@
 <template>
-    <button class="py-8 px-12 text-white text-[1.3rem] font-bold uppercase rounded-[1.6rem] btn">
+    <button class="py-8 px-12 z-10 text-white text-[1.3rem] font-bold uppercase rounded-[1.6rem] btn">
         {{ text }}
     </button>
 </template>
@@ -23,6 +23,13 @@ defineProps<IProps>()
 
     &.violet {
         @apply bg-violet;
+    }
+
+    transition: 0.25s ease all;
+
+    &:hover,
+    &:active {
+        transform: translateY(-0.4rem)
     }
 }
 </style>

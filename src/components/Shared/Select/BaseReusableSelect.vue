@@ -225,6 +225,8 @@ function upHandle() {
 
     scrollbar-width: none;
 
+    border-radius: 0 0 1.4rem 1.4rem;
+
     &::-webkit-scrollbar {
       display: none;
     }

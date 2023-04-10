@@ -17,6 +17,7 @@
     "@vue/test-utils": "^2.3.2",
     "axios": "^1.2.2",
     "pinia": "^2.0.28",
+    "swiper": "^9.2.0",
     "vue": "^3.2.45",
     "vue-cookies": "^1.8.2",
     "vue-router": "^4.1.6",

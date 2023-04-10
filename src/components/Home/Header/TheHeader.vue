@@ -1,7 +1,8 @@
 <template>
-    <header class=" section center  flex flex-col items-center justify-between md:min-h-screen md:items-start md:flex-row ">
+    <header class="section  center  flex flex-col items-center justify-between md:min-h-screen md:items-start md:flex-row ">
 
 
+        
         <div class="  h-full max-h-[37rem] flex flex-col justify-center  mb-[6rem]">
 
             <h1 class="title-big font-montserrat-alt ">
@@ -37,7 +38,7 @@
 
 
 <script setup lang="ts">
-import BaseButton from '../Shared/BaseButton.vue';
+import BaseButton from '../../Shared/BaseButton.vue';
 import BaseHeaderImages from './BaseHeaderImages.vue';
 
 

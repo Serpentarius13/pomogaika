@@ -37,8 +37,7 @@ import TheNavbar from '@/components/Navbar/TheNavbar.vue';
 }
 
 main {
-    margin-top: 6.7rem;
 
-    @apply mt-[1rem] md:mt-[5rem] lg:mt-[6.7rem]
+    @apply mt-[1rem] md:mt-[5rem] lg:mt-[6.7rem] flex flex-col gap-[10rem]
 }
 </style>

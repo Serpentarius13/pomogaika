@@ -1,7 +1,7 @@
 <template>
   <li class="select__selectable-li " role="option" :aria-selected="isSelected" tabindex="-1" @click="select">
     <button class="select__selectable ">
-      <span > {{ option }}</span>
+      <span> {{ option }}</span>
       <span v-if="isSelected" class="select__check"> &check; </span>
     </button>
   </li>
@@ -37,7 +37,7 @@ const isSelectedBg = computed(() => {
 .select {
   &__selectable {
     width: 100%;
-    padding: 1.2rem 3rem 1.6rem 3rem;
+    padding: 1.2rem 3rem 1.6rem 1.2rem;
 
     font-size: 1.3rem;
     line-height: inherit;
@@ -53,6 +53,11 @@ const isSelectedBg = computed(() => {
 
     &-li {
       background-color: v-bind(isSelectedBg);
+
+      &:last-child {
+        border-radius: 0 0 1.4rem 1.4rem;
+      }
+
     }
 
     &-li:hover {
