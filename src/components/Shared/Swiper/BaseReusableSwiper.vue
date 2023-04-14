@@ -1,16 +1,12 @@
 
 <template>
-    <swiper :pagination="pagination" :modules="modules" class="mySwiper">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+    <swiper v-bind="props.options" :pagination="pagination" :modules="modules" class="mySwiper">
+        <slot />
     </swiper>
 </template>
 <script setup lang="ts">
 // Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Swiper } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,7 +15,8 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination } from 'swiper';
+import { Pagination, } from 'swiper';
+
 
 
 
@@ -33,6 +30,17 @@ const pagination: any = {
 
 }
 
+interface SwiperOptions {
+    spaceBetween?: number
+    slidesPerView?: string
+}
+
+interface IProps {
+    options?: SwiperOptions | any
+}
+
+const props = defineProps<IProps>()
+
 
 
 
@@ -40,9 +48,34 @@ const pagination: any = {
 
 <style  lang="scss">
 .swiper {
-    width: 100vw;
-    height: 100vh;
-    
+
+
+    height: 100%;
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+
+
+
+
+
+    &-slide {
+        width: 100%;
+       height: 100%;
+    }
+
+
+    &-pagination {
+
+        position: relative !important;
+
+
+    }
 }
 
 
@@ -52,12 +85,8 @@ const pagination: any = {
     transition: 0.25s ease all;
 
     &-active {
-       @apply w-[4.6rem] bg-orange-main;
+        @apply w-[4.6rem] bg-orange-main;
     }
 }
-
-
-
-
 </style>
   

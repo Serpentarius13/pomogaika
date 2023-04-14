@@ -6,30 +6,29 @@
     }
 
     .section {
-        @apply px-[1.5rem] md:px-[3rem] xl:px-0;
+        @apply  px-0 xl:px-[1.5rem] md:px-[3rem] ;
     }
 
     .title-big {
-        font-size: 2.8rem;
-        line-height: 3.3rem;
+      
         letter-spacing: -5%;
         font-weight: 400;
 
-        @apply md:text-[3.8rem] md:leading-[4.8rem] lg:leading-[6.5rem] lg:text-[5.4rem] ;
+        @apply   leading-[6.5rem] text-[5.4rem] lg:text-[3.8rem] lg:leading-[4.8rem] md:text-[2.8rem] md:leading-[3.3rem] ;
     }
 
     .subtitle-big {
         font-size: 2rem;
         line-height: 2rem;
 
-        @apply md:text-[2.4rem] md:leading-[2.4rem]
+        @apply text-[2.4rem] leading-[2.4rem] lg:text-[2rem] lg:leading-[2rem];  
     }
 
     .title-small {
         font-size: 3.2rem;
         line-height: 3.8rem;
         letter-spacing: -5%;
-        @apply font-medium md:text-[3.6rem] leading-[4.3rem];
+        @apply font-medium  text-[3.6rem] leading-[4.3rem] md:text-[3.2rem] md:leading-[3.8rem];
 
 
     }

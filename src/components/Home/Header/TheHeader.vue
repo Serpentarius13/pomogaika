@@ -1,8 +1,8 @@
 <template>
-    <header class="section  center  flex flex-col items-center justify-between md:min-h-screen md:items-start md:flex-row ">
+    <header class="section center flex items-start flex-row justify-between md:items-center md:flex-col  pb-[10rem] ">
 
 
-        
+
         <div class="  h-full max-h-[37rem] flex flex-col justify-center  mb-[6rem]">
 
             <h1 class="title-big font-montserrat-alt ">
@@ -17,27 +17,26 @@
                 В нашей базе 2 345 вакансий
             </h2>
 
-            <div class=" hidden   items-center md:flex md:gap-[1.6rem]">
+            <div class=" flex gap-[1.6rem]   items-center md:hidden">
 
-                <BaseButton class="violet" text="Ищу помощника" />
-                <BaseButton class="orange" text="Ищу работу" />
+                <BaseHeaderBtns />
             </div>
 
 
         </div>
 
-        <BaseHeaderImages  />
+        <BaseHeaderImages />
 
-        <div class="flex w-full flex-col gap-[1.6rem] items-center  md:hidden">
+        <div class="hidden w-full flex-col gap-[1.6rem] items-center  md:flex">
 
-            <BaseButton class="violet w-full " text="Ищу помощника" />
-            <BaseButton class="orange w-full" text="Ищу работу" />
+            <BaseHeaderBtns :isFull="true" />
         </div>
     </header>
 </template>
 
 
 <script setup lang="ts">
+import BaseHeaderBtns from '@/components/Home/Header/BaseHeaderBtns.vue';
 import BaseButton from '../../Shared/BaseButton.vue';
 import BaseHeaderImages from './BaseHeaderImages.vue';
 

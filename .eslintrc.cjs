@@ -11,7 +11,6 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'plugin:@typescript-eslint/recommended',
     '@vue/eslint-config-airbnb',
-    'plugin:cypress/recommended',
   ],
 
   overrides: [],

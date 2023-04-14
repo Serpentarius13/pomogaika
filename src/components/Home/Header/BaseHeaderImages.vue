@@ -1,5 +1,6 @@
 <template>
-    <figure class="relative md:-translate-y-[7rem] translate-y-[5rem] w-full h-[40rem] max-w-[95vw] flex justify-center items-center">
+    <figure
+        class="relative -translate-y-[7rem] md:translate-y-[5rem] w-full h-[40rem] max-w-[95vw] flex justify-center items-center">
 
         <img src="/img/header/top.svg" />
         <img src="/img/header/middle.svg" />
@@ -17,7 +18,7 @@
 
 <style scoped lang="scss">
 img {
-    @apply w-[30rem] absolute -top-1/3 left-[15%] md:w-full sm:left-[25%] md:top-0 md:left-0;
+    @apply absolute w-full md:w-[30rem] top-0 md:-top-1/3 left-0 md:left-[25%] sm:left-[15%];
 
     &:nth-child(1) {
         transform: translate(-20%, -10%)
@@ -30,7 +31,7 @@ img {
     &:nth-child(3) {
         transform: translate(-0%, 90%);
 
-        @apply w-[25rem] md:w-[40rem]
+        @apply w-[40rem] md:w-[25rem] 
     }
 }
 </style>

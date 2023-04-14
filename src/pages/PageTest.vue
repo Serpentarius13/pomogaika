@@ -1,9 +1,5 @@
 <template>
-<PageSkeleton>
-
-    <TheHeader/>
-
-</PageSkeleton>
+<TheSteps/>
 </template>
 
 <script setup lang="ts">
@@ -12,6 +8,7 @@ import TheNavbar from '@/components/Navbar/TheNavbar.vue';
 
 
 import PageSkeleton from './PageSkeleton.vue';
+import TheSteps from '@/components/Home/Steps/TheSteps.vue';
 
 </script>
 

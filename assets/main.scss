@@ -35,3 +35,12 @@ html {
 .locked {
     overflow: hidden;
 }
+
+#app {
+   
+    background: url('/img/header/BG.png') 0 0 / cover no-repeat;
+    @screen md {
+      
+        background: url('/img/header/BG.png') 100% 0 / cover no-repeat;
+    }
+}

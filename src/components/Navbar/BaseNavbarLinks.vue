@@ -3,7 +3,7 @@
 
         <li :class="textClassComputed" v-for="({ to, text }) in links " :key="text">
 
-            <router-link  :to="to">
+            <router-link :to="to">
                 {{ text }}
             </router-link>
         </li>
