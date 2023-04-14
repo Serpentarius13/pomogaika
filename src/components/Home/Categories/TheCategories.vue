@@ -1,7 +1,8 @@
 <template>
-    <section class="center section flex gap-[4.8rem] justify-between mb-[55rem] lg:flex-col">
+    <section class="center section flex gap-[4.8rem] justify-between lg:flex-col">
 
-        <div class="flex flex-col justify-between max-w-[28.2rem] min-h-[55rem] lg:max-w-[95%] lg:min-h-[10rem] lg:items-center  ">
+        <div
+            class="flex flex-col justify-between max-w-[28.2rem] min-h-[55rem] lg:max-w-[95%] lg:min-h-[10rem] lg:items-center  ">
             <div class="flex flex-col gap-[3rem]">
 
 
@@ -20,6 +21,10 @@
 
 
         <TheCategoriesSlider />
+
+        <div class="hidden lg:flex flex-col gap-[2.4rem] ">
+            <BaseCategoriesBtns />
+        </div>
 
     </section>
 </template>

@@ -43,7 +43,7 @@ import BaseReusableSwiper from '@/components/Shared/Swiper/BaseReusableSwiper.vu
 import { SwiperSlide } from 'swiper/vue';
 import { computed } from 'vue';
 
-import colors from '@/features/constants/colors'
+import colors from '@/features/constants/variables/colors.js'
 import BaseCategoryCard from '@/components/Home/Categories/BaseCategoryCard.vue';
 
 

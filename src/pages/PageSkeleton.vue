@@ -3,7 +3,7 @@
 
 
 
-    <main class="mt-[6.7rem] md:mt-[5rem] sm:mt-[1rem]   flex flex-col gap-[10rem]">
+    <main class="mt-[6.7rem] md:mt-[5rem] sm:mt-[1rem] pb-[10rem]  flex flex-col gap-[10rem]">
 
         <slot />
     </main>

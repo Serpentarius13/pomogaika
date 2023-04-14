@@ -1,6 +1,8 @@
 
+
+
 <template>
-    <swiper v-bind="props.options" :pagination="pagination" :modules="modules" class="mySwiper">
+    <swiper v-bind="props.options" :pagination="pagination" :modules="modules" class=" select-none touch-none">
         <slot />
     </swiper>
 </template>
@@ -16,6 +18,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination, } from 'swiper';
+import type { TBreakpoints } from '@/features/constants/variables/landingSwiperConfig';
 
 
 
@@ -31,12 +34,13 @@ const pagination: any = {
 }
 
 interface SwiperOptions {
-    spaceBetween?: number
-    slidesPerView?: string
+    spaceBetween: number
+    slidesPerView: number
+    breakpoints: TBreakpoints
 }
 
 interface IProps {
-    options?: SwiperOptions | any
+    options?: Partial<SwiperOptions>
 }
 
 const props = defineProps<IProps>()
@@ -59,14 +63,16 @@ const props = defineProps<IProps>()
     gap: 3rem;
 
 
-
+    @screen md {
+        gap: 2rem;
+    }
 
 
 
 
     &-slide {
         width: 100%;
-       height: 100%;
+        height: 100%;
     }
 
 

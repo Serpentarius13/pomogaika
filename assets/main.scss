@@ -38,9 +38,9 @@ html {
 
 #app {
    
-    background: url('/img/header/BG.png') 0 0 / cover no-repeat;
+    background: url('/img/header/BG.png') 0 0 / contain no-repeat;
     @screen md {
       
-        background: url('/img/header/BG.png') 100% 0 / cover no-repeat;
+        background: url('/img/header/BG.png') 50% 0 /no-repeat;
     }
 }
