@@ -1,5 +1,5 @@
 <template>
-    <header class="section center flex items-start flex-row justify-between md:items-center md:flex-col  pb-[10rem] ">
+    <header class="section center flex items-start flex-row justify-between md:items-center md:flex-col pb-[10rem] md:pb-[0rem] md:overflow-hidden">
 
 
 

@@ -2,7 +2,7 @@
 
 
 <template>
-    <swiper v-bind="props.options" :pagination="pagination" :modules="modules" class=" select-none touch-none">
+    <swiper v-bind="props.options" :pagination="pagination" :modules="modules" class="select-none touch-none">
         <slot />
     </swiper>
 </template>

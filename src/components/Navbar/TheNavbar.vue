@@ -11,7 +11,7 @@
         </div>
     </nav>
     <nav
-        class="hidden  lg:flex items-center justify-between px-[1.5rem] pt-[1.7rem] pb-4 border-b-[1px] border-opacity-gray">
+        class="hidden  lg:flex items-center justify-between  px-[1.5rem] pt-[1.7rem] pb-4 border-b-[1px] border-opacity-gray">
         <div class="flex gap-[2.1rem] items-center">
             <BaseMobileBurger @openMenu="handleOpenMobileMenu" />
             <BaseLogo />

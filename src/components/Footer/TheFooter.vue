@@ -7,7 +7,7 @@
         <div class="flex justify-between md:flex-col md:items-center md:gap-[3rem]">
           <BaseLogo :isWhite="true" />
 
-          <div class="flex items-center gap-[4rem] md:gap-[2rem] md:flex-wrap">
+          <div class="flex items-center gap-[4rem] md:gap-[2rem] ">
             <RouterLink
               class="text-[1.3rem] !text-white font-montserrat-alt"
               v-for="{ to, text } in footerLinks"
@@ -44,7 +44,7 @@
         </div>
       </div>
 
-      <BaseFooterRights class="hidden md:flex"/>
+      <BaseFooterRights class="hidden  md:flex flex-col justify-start gap-[1rem]"/>
     </div>
   </footer>
 </template>

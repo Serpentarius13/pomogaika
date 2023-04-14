@@ -21,7 +21,7 @@
         </SwiperSlide>
     </BaseReusableSwiper>
 
-    <BaseReusableSwiper class="!hidden sm:!flex !w-screen " :options="{ slidesPerView: '1.5', spaceBetween: -120}">
+    <BaseReusableSwiper class="!hidden sm:!flex   " :options="{ slidesPerView: '1.5', spaceBetween: 20}">
         <SwiperSlide v-for="(category, ix) in categories.slice(0, 12)" :key="ix">
 
             <div class="grid place-items-center">
