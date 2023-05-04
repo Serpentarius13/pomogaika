@@ -9,7 +9,6 @@
 @import "./tailwind/utilities.scss";
 
 @import "./scss/animations.scss";
-@import "./normalize.scss";
 
 * {
   margin: 0;
@@ -33,9 +32,14 @@ html {
   overflow: hidden;
 }
 
+
 #app {
-  background: url("/img/bg-desktop.png") 0 0 / contain no-repeat;
-  @media (max-width: 768px) {
-    background: url("/img/bg-mobile.png") 0 0 / contain no-repeat;
+  background: url("/img/bg-main.png") 0 0 / contain no-repeat;
+  @media (max-width: 1024px) {
+    background: url("/img/bg-main-tablet.png") 0 0 / contain no-repeat;
+  }
+
+  @media (max-width: 600px) {
+    background: url("/img/bg-main-phone.png") 0 0 / contain no-repeat;
   }
 }

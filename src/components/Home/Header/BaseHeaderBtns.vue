@@ -1,28 +1,21 @@
 <template>
-    <BaseButton :class="`violet ${fullComputed}`" text="Ищу помощника" />
-    <BaseButton :class="`orange ${fullComputed}`" text="Ищу работу" />
+  <button :class="`violet btn ${fullComputed}`">Ищу помощника</button>
+  <button :class="`orange btn  ${fullComputed}`">Ищу работу</button>
 </template>
 
-
 <script setup lang="ts">
-
-import BaseButton from '@/components/Shared/BaseButton.vue';
-import { computed } from 'vue';
+import { computed } from "vue";
 
 interface IProps {
-    isFull?: boolean
+  isFull?: boolean;
 }
 
 const props = defineProps<IProps>();
 
 const fullComputed = computed(() => {
-    if (props.isFull) return '!w-full'
-    else return ''
-})
-
-
-
+  if (props.isFull) return "!w-full";
+  else return "";
+});
 </script>
-
 
 <style scoped lang="scss"></style>

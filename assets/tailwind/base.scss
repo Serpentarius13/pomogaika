@@ -1,3 +1,5 @@
 @layer base {
-
+  .transitioned {
+    transition: 0.25s ease all;
+  }
 }

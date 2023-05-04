@@ -1,11 +1,11 @@
 <template>
-    <figure class="flex items-center gap-[1.5rem]">
+    <router-link to="/" class="flex items-center gap-[1.5rem]">
         <img :src="dataComputed.img" alt="Лого StaffStar" />
 
         <h4 class="text-[2.2rem] font-bold " :style="dataComputed.textStyle">
             StaffStar
         </h4>
-    </figure>
+    </router-link>
 </template>
 
 

@@ -1,14 +1,37 @@
 <template>
-  <div class="select__wrapper" @keydown.up.prevent.exact.stop="upHandle" @keydown.down.prevent.exact.stop="downHandle"
-    @keydown.enter.prevent.exact="mainHandle" v-click-away="close" aria-haspopup="listbox" aria-labelledby="select-label"
-    ref="wrapperRef">
-    <TheSelectButton :isOpened="isOptionsShown" @up="upHandle" @down="downHandle" :currentOption="modelValue"
-      @click="mainHandle" />
+  <div
+    class="select__wrapper"
+    @keydown.up.prevent.exact.stop="upHandle"
+    @keydown.down.prevent.exact.stop="downHandle"
+    @keydown.enter.prevent.exact="mainHandle"
+    v-click-away="close"
+    aria-haspopup="listbox"
+    aria-labelledby="select-label"
+    ref="wrapperRef"
+  >
+    <TheSelectButton
+      :isOpened="isOptionsShown"
+      @up="upHandle"
+      @down="downHandle"
+      :currentOption="modelValue"
+      @click="mainHandle"
+    />
     <Transition :name="isAbsolute ? 'appear' : 'pop'">
-      <ul class="select__options" ref="listRef" aria-labelledby="select-label" role="listbox" :style="isRendered"
-        v-show="decideIfShown">
-        <BaseSelectable v-for="(option, ix) in arrayOfOptions" :option="option" :key="ix" @selected="handleSelect"
-          :value="modelValue" />
+      <ul
+        class="select__options"
+        ref="listRef"
+        aria-labelledby="select-label"
+        role="listbox"
+        :style="isRendered"
+        v-show="decideIfShown"
+      >
+        <BaseSelectable
+          v-for="(option, ix) in arrayOfOptions"
+          :option="option"
+          :key="ix"
+          @selected="handleSelect"
+          :value="modelValue"
+        />
       </ul>
     </Transition>
   </div>
@@ -201,25 +224,17 @@ function upHandle() {
     display: flex;
     flex-direction: column;
 
-
     border-radius: 1rem;
     position: relative;
 
-
- @apply text-gray;
-
-
+    @apply text-gray;
   }
 
   &__options {
-
-
     width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
-
-
 
     transition: 0.5s all;
 

@@ -1,53 +1,70 @@
 @layer components {
+  .center {
+    @apply w-full mx-auto max-w-[120rem];
 
-    .center {
-  
-        @apply w-full mx-auto max-w-[120rem];
+    @screen md {
+      max-width: 100vw;
+    }
+  }
+
+  .section {
+    @apply px-0 xl:px-[1.5rem] md:px-[3rem] sm:px-[1.5rem] ;
+  }
+
+  .title-big {
+    letter-spacing: -5%;
+    font-weight: 400;
+
+    @apply leading-[6.5rem] text-[5.4rem] lg:text-[3.8rem] lg:leading-[4.8rem] md:text-[2.8rem] md:leading-[3.3rem];
+  }
+
+  .subtitle-big {
+    font-size: 2rem;
+    line-height: 2rem;
+
+    @apply text-[2.4rem] leading-[2.4rem] lg:text-[2rem] lg:leading-[2rem];
+  }
+
+  .title-small {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: -5%;
+    @apply font-medium  text-[3.6rem] leading-[4.3rem] md:text-[3.2rem] md:leading-[3.8rem];
+  }
+
+  .subtitle-small {
+    font-size: 1.6rem;
+    line-height: 2.24rem;
+  }
+
+  .text-small {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+
+  .btn {
+    @apply py-8 px-12 z-10 text-white text-[1.3rem] font-bold uppercase rounded-[1.6rem] w-fit h-fit flex gap-[1rem] items-center justify-center;
+
+    transition: 0.25s ease all;
+    &.orange {
+      @apply bg-orange;
     }
 
-    .section {
-        @apply  px-0 xl:px-[1.5rem] md:px-[3rem] ;
+    &.violet {
+      @apply bg-violet;
     }
 
-    .title-big {
-      
-        letter-spacing: -5%;
-        font-weight: 400;
+    &.outline {
+      @apply bg-transparent text-purple-main;
 
-        @apply   leading-[6.5rem] text-[5.4rem] lg:text-[3.8rem] lg:leading-[4.8rem] md:text-[2.8rem] md:leading-[3.3rem] ;
+      &:hover {
+        @apply bg-purple-main text-white;
+      }
     }
 
-    .subtitle-big {
-        font-size: 2rem;
-        line-height: 2rem;
-
-        @apply text-[2.4rem] leading-[2.4rem] lg:text-[2rem] lg:leading-[2rem];  
+    &:hover,
+    &:active {
+      transform: translateY(-0.4rem);
     }
-
-    .title-small {
-        font-size: 3.2rem;
-        line-height: 3.8rem;
-        letter-spacing: -5%;
-        @apply font-medium  text-[3.6rem] leading-[4.3rem] md:text-[3.2rem] md:leading-[3.8rem];
-
-
-    }
-
-    .subtitle-small {
-        font-size: 1.6rem;
-        line-height: 2.24rem;
-
-    }
-
-    .text-small {
-        font-size: 1.3rem;
-        line-height: 1.3rem;
-        
-    }
-
-    .transitioned {
-        transition: 0.25s ease all;
-    }
-
-
+  }
 }

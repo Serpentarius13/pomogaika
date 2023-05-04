@@ -1,16 +1,10 @@
 <template>
-    <BaseButton class="violet !w-full" text="Смотреть все резюме" />
-    <BaseButton class="orange !w-full" text="Смотреть все вакансии" />
+  <button class="btn violet !w-full"> Смотреть все резюме</button>
+  <button class="btn orange !w-full"> Смотреть все вакансии</button>
 </template>
 
-
 <script setup lang="ts">
-import BaseButton from '@/components/Shared/BaseButton.vue';
-
-
-
 
 </script>
-
 
 <style scoped lang="scss"></style>
