@@ -1,5 +1,5 @@
 <template>
-  <section class="center section flex-col sm:gap-[3rem]">
+  <div class="center section flex-col sm:gap-[3rem]">
     <BaseProfileImage
       photo="/img/person.png"
       name="Макфи"
@@ -7,7 +7,9 @@
     />
     <BaseResumeHeader v-bind="resumeHeader" />
 
-    <div class="w-full gap-[2.4rem] grid grid-cols-[1fr_0.3fr] sm:flex sm:flex-col">
+    <section
+      class="w-full gap-[2.4rem] grid grid-cols-[1fr_0.3fr] sm:flex sm:flex-col"
+    >
       <div class="flex flex-col gap-[3rem]">
         <BaseResumePrice
           class="pt-[1rem]"
@@ -15,14 +17,16 @@
           subtext="за 1 ребенка, взрослого, животного"
         />
 
-        <TheResumeVideo class="hidden sm:!flex sm:items-start"/>
+        <TheResumeVideo class="hidden sm:!flex sm:items-start" />
 
         <TheResumeInteresting />
 
         <TheResumeDescription class="pt-[3rem]" />
       </div>
 
-      <div class="flex flex-col gap-[4rem] items-center -translate-y-[4%] lg:-translate-y-0">
+      <section
+        class="flex flex-col gap-[4rem] items-center -translate-y-[4%] lg:-translate-y-0"
+      >
         <BaseProfileImage
           photo="/img/person.png"
           name="Макфи"
@@ -30,9 +34,11 @@
         />
 
         <TheResumeVideo class="sm:hidden" />
-      </div>
-    </div>
-  </section>
+      </section>
+    </section>
+
+    <TheResumeExperience />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -42,6 +48,8 @@ import TheResumeDescription from "@/components/Board/Resume/Description/TheResum
 import TheResumeInteresting from "@/components/Board/Resume/Description/TheResumeInteresting.vue";
 import TheResumeVideo from "@/components/Board/Resume/Description/TheResumeVideo.vue";
 import BaseProfileImage from "@/components/Shared/Auxilary/BaseProfileImage.vue";
+
+import TheResumeExperience from "./Experience/TheResumeExperience.vue";
 import { TCountries } from "@/features/constants/types/api";
 
 interface IResumeHeader {
