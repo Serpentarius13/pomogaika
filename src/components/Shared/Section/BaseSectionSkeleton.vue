@@ -1,5 +1,5 @@
 <template>
-  <section class="center section flex flex-col gap-[3rem]">
+  <section class="center flex flex-col gap-[3rem]">
     <h2 class="title-small text-center">
       {{ title }}
     </h2>

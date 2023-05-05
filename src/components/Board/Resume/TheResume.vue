@@ -38,6 +38,8 @@
     </section>
 
     <TheResumeExperience />
+
+    <TheRating class="pt-[10rem] rating" />
   </div>
 </template>
 
@@ -51,6 +53,7 @@ import BaseProfileImage from "@/components/Shared/Auxilary/BaseProfileImage.vue"
 
 import TheResumeExperience from "./Experience/TheResumeExperience.vue";
 import { TCountries } from "@/features/constants/types/api";
+import TheRating from "@/components/Home/Rating/TheRating.vue";
 
 interface IResumeHeader {
   name: string;
@@ -69,4 +72,14 @@ const resumeHeader: IResumeHeader = {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+:deep(.rating) {
+  h2 {
+    @apply text-start;
+
+    @screen md {
+      @apply text-center;
+    }
+  }
+}
+</style>

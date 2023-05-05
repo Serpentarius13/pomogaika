@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-[2rem]">
-    <h3 class="text-[2.4rem] font-medium font-montserrat-alt">О Галине</h3>
+    <h3 class="resume-title">О Галине</h3>
     <div class="w-full flex justify-between md:flex-col md:gap-[6rem]">
       <div class="flex flex-col gap-[2rem] max-w-[53rem]">
         <p class="text-[1.6rem]">

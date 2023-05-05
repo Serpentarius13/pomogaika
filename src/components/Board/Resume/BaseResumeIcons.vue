@@ -5,7 +5,10 @@
         class="max-w-[22rem] flex items-center gap-[2.2rem] md:max-w-full"
       >
         <div
-          class="w-[2.8rem] aspect-square rounded-[5.4rem] flex items-center justify-center bg-purple-light"
+          :class="[
+            'w-[2.8rem] aspect-square rounded-[5.4rem] flex items-center justify-center',
+            isOrange ? 'bg-orange-light' : 'bg-purple-light',
+          ]"
         >
           <BaseIcon :name="icon.name" class="w-[1.4rem]" />
         </div>
@@ -22,7 +25,7 @@
 import BaseIcon from "@/components/Shared/BaseIcon.vue";
 import { ITag } from "@/features/constants/types/components";
 
-defineProps<{ icons: ITag[] }>();
+defineProps<{ icons: ITag[]; isOrange?: boolean }>();
 </script>
 
 <style scoped lang="scss"></style>

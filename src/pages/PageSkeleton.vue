@@ -2,7 +2,7 @@
   <TheNavbar />
 
   <main
-    class="mt-[6.7rem] md:mt-[5rem] sm:mt-[1rem] pb-[10rem] flex flex-col gap-[10rem]"
+    class="mt-[6.7rem] md:mt-[5rem] sm:mt-[1rem] pb-[10rem] flex flex-col gap-[10rem] section"
   >
     <slot />
   </main>

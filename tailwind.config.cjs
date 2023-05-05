@@ -23,6 +23,7 @@ module.exports = {
         black: "#212121",
         gray: "#767676",
         "gray-dark": "#3F4042",
+        "gray-light": "#DADADA",
 
         "opacity-gray": "#76767680",
 
@@ -30,6 +31,8 @@ module.exports = {
 
         "orange-main": "#fc895c",
         "orange-dark": "#E17C6E",
+        "orange-light": "#FCDECE",
+        "orange-medium": "#FB9C64",
         "purple-main": "#6d86e9",
         "purple-dark": "#737CD2",
         "purple-light": "#E5DFFB",
