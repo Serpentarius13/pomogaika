@@ -1,6 +1,6 @@
 <template>
   <article class="flex flex-col gap-[1rem] w-[38.4rem] max-w-[90%]">
-    <h4 class="text-[1.6rem] font-bold text-gray uppercase">
+    <h4 class="resume-subtitle">
       {{ title }}
     </h4>
 

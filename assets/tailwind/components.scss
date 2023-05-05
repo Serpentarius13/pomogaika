@@ -71,4 +71,8 @@
   .resume-title {
     @apply text-[2.4rem] font-medium font-montserrat-alt;
   }
+
+  .resume-subtitle {
+    @apply text-[1.6rem] font-bold text-gray uppercase;
+  }
 }

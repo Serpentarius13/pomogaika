@@ -5,7 +5,7 @@ type TBreakpoint = {
 
 export type TBreakpoints = Record<number, TBreakpoint>;
 
-interface IBreakpoints {
+export interface IBreakpoints {
   breakpoints: TBreakpoints;
 }
 

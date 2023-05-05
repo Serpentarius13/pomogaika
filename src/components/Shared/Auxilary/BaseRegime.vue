@@ -2,7 +2,7 @@
   <ul class="flex items-center gap-[0.6rem] flex-wrap">
     <li v-for="(value, day) in regime" :key="day">
       <div class="flex flex-col items-center gap-[0.2rem]">
-        <span> {{ regimeMap[day] }} </span>
+        <span class="text-[#909090]"> {{ regimeMap[day] }} </span>
 
         <div
           :class="[

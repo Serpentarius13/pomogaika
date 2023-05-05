@@ -1,3 +1,4 @@
+import { TCountries } from "@/features/constants/types/api";
 import { TIconMap } from "@/features/constants/variables/iconMap";
 
 export interface ITag {
@@ -23,3 +24,12 @@ export interface IRegime {
 }
 
 export type TRegimeKeys = keyof IRegime;
+
+export interface IOffer {
+  title: string;
+  price: string;
+  location: string;
+  img: string;
+  imgAlt: string;
+  country: TCountries;
+}
