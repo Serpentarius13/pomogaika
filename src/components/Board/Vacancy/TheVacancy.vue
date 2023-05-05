@@ -80,7 +80,7 @@
         <img
           src="/img/helper.png"
           alt="Заставка помощника"
-          class="w-[24.2rem] pb-[2rem] sm:hidden"
+          class="w-[24.2rem] pb-[2rem] sm:hidden bg-orange-light rounded-full aspect-square shadowy"
         />
 
         <BaseResumeViews
